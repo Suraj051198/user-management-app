@@ -1,38 +1,27 @@
-project:
-  name: User Management App
-  description: >
-    A backend-focused web application to manage users using RESTful APIs.
-    Supports registration, login, retrieve, update, and delete operations.
+# User Management App
 
-technologies:
-  backend: Node.js, Express.js
-  database: MongoDB (with Mongoose)
-  authentication: JSON Web Tokens (JWT)
-  password_security: bcrypt
-  api_testing: Postman
-  version_control: Git, GitHub
+![Project Banner](optional-banner-url.png) 
+*Simple user management system*
 
-project_structure:
-  - models/
-  - routes/
-  - controllers/
-  - config/
-  - middleware/
-  - server.js
-  - package.json
-  - README.md
+## ✨ Features
+- ✅ User registration & login
+- 🔐 Authentication
+- 👤 Profile management
+- 📊 Admin dashboard (if applicable)
 
-setup_instructions:
-  clone_repository: git clone https://github.com/Suraj051198/user-management-app.git
-  change_directory: cd user-management-app
-  install_dependencies: npm install
-  create_env_file:
-    - PORT=5000
-    - MONGO_URI=your_mongodb_connection_string
-    - JWT_SECRET=your_jwt_secret_key
-  run_server: npm start
+## 🚀 Quick Start
 
-api_endpoints:
+### Prerequisites
+- Node.js (version x.x.x)
+- MongoDB (if using)
+
+### Installation
+```bash
+git clone https://github.com/Suraj051198/user-management-app.git
+cd user-management-app
+npm install
+
+## Api_endpoints:
   - method: POST
     endpoint: /api/users/register
     description: Register a new user
@@ -57,25 +46,22 @@ api_endpoints:
     endpoint: /api/users/:id
     description: Delete user by ID
 
-features:
+## features:
   - Secure password hashing using bcrypt
   - JWT-based authentication
   - Full CRUD operations
   - Centralized error handling
   - Structured MVC architecture
 
-testing:
-  tools: Postman
-  note: Optional future implementation using Mocha/Chai
-
-future_enhancements:
+## future_enhancements:
   - Role-based access (Admin/User)
   - Email verification
   - Forgot/Reset password functionality
   - React.js frontend
 
-author:
+### author:
   name: Suraj Sonawane
   email: surajsonawane172@gmail.com
   linkedin: https://www.linkedin.com/in/sonawane-suraj/
   github: https://github.com/Suraj051198
+
