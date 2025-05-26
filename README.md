@@ -20,6 +20,7 @@
 git clone https://github.com/Suraj051198/user-management-app.git
 cd user-management-app
 npm install
+```
 
 ## Api_endpoints:
   - method: POST
