@@ -1,6 +1,6 @@
 # User Management App
 
-![Project Banner](optional-banner-url.png) 
+![image](https://github.com/user-attachments/assets/d4510dd5-7abe-44ca-8082-73d50d2b7f67)
 *Simple user management system*
 
 ## ✨ Features
