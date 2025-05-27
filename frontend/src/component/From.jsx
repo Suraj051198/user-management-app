@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import './From.css';
 
 export default function From() {
   const [name, setName] = useState('');
@@ -52,16 +53,25 @@ export default function From() {
   };
 
   return (
-    <>
-    {/* // This is a form component for user registration and management */}
-      <h2>user registration and management</h2>
-      <form onSubmit={handleSubmit} >
-        <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} /> <br />
-        <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} /> <br />
-        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} /> <br />
-        <button type="button" onClick={handleReject}>Reset</button>
-        <button type="submit">Submit</button>
-      </form>
+    <div className="form-container">
+      <div className="form-header">
+        <h2>User Registration and Management</h2>
+      </div>
+      <div>
+  <form onSubmit={handleSubmit}>
+    <div className="form-group">
+      <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
+    </div>
+    <div className="form-group">
+      <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+    </div>
+    <div className="form-group">
+      <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+    </div>
+    <button type="button" className="form-button" onClick={handleReject}>Reset</button>
+    <button type="submit" className="form-button">Submit</button>
+  </form>
+</div>
 
       <h3>Show All Data</h3>
       <table border={1} cellPadding={10} cellSpacing={5}>
@@ -148,7 +158,12 @@ export default function From() {
                             fetchUsers();
                           } catch (error) {
                             console.error('Error deleting user:', error);
-                            alert('Error deleting user');}}}>Delete</button>
+                            alert('Error deleting user');
+                          }
+                        }}
+                      >
+                        Delete
+                      </button>
                     </>
                   )}
                 </td>
@@ -157,6 +172,6 @@ export default function From() {
           )}
         </tbody>
       </table>
-    </>
+    </div>
   );
 }
